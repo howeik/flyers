@@ -7,8 +7,8 @@
       </div>
       <div class="overlay-text">
           <div class="time-container text-center pull-left">
-            <div style="font-size:.8em;">DEC</div>
-            <div style="font-size:1.2em;">18</div>
+            <div style="font-size:.8em;"><% unless event['short_month'].nil? %> <%= event['short_month'].upcase %> <% end %></div>
+            <div style="font-size:1.2em;"><% unless event['day'].nil? %> <%= event['day'] %> <% end %></div>
           </div>
         <h1 style="padding-left:11%;"><%= event['title'] %></h1>
       </div>
