@@ -4,6 +4,14 @@ class EventsController < ApplicationController
 
     @events=ActiveSupport::JSON.decode(RestClient.get('http://54.183.116.48/events'))
 
+    @events.each do |event|
+      unless event['startDate'].nil?
+        event['short_month'] = event['startDate'].to_datetime.strftime('%b')
+        event['day'] = event['startDate'].to_datetime.day
+      end
+    end
+
+    logger.debug @events
   end
 
   def show
