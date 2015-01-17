@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'login/login'
+
   root 'events#index'
+
 
   resources :events
   # The priority is based upon order of creation: first created -> highest priority.
