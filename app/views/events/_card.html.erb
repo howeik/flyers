@@ -15,7 +15,7 @@
     </div>
 
     <div class="container col-md-12">
-      <p class="line1b pull-left"><%= event['location'] %></p>
+      <p class="line1b pull-left"><% unless event["organization"].nil? %> <%= event["organization"]["name"] %> <% end %></p>
       <p class="pull-right" style="padding-top:5px;font-size:2.3em;">&#10004</p>
     </div>
 
