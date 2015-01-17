@@ -1,6 +1,6 @@
 <div class="row">
 <%= javascript_tag do %>
-  window.events = '<%= raw events.to_json %>';
+  window.events = '<%= raw @events.to_json %>';
 <% end %>
 
   <% @events.each do |event| %>
