@@ -4,11 +4,12 @@
     <!-- Form Name -->
     <legend>Add Event</legend>
 
+
     <!-- Text input-->
     <div class="control-group">
       <label class="control-label" for="EventName">Event Title</label>
       <div class="controls">
-        <input id="EventName" name="EventName" type="text" placeholder="" class="input-xlarge">
+        <input id="EventName" name="title" type="text" placeholder="" class="input-xlarge">
 
       </div>
     </div>
@@ -17,19 +18,19 @@
     <div class="control-group">
       <label class="control-label" for="EventLocation">Location</label>
       <div class="controls">
-        <input id="EventLocation" name="EventLocation" type="text" placeholder="" class="input-large">
+        <input id="EventLocation" name="location" type="text" placeholder="" class="input-large">
 
       </div>
     </div>
 
     <!-- Date and Time -->
+    <label class="control-label" for="EventTime">Time</label>
     <div class="container">
-    <label class="container" for="EventTime">Time</label>
       <div class="row">
         <div class='col-sm-6'>
           <div class="form-group">
             <div class='input-group date' id='datetimepicker1'>
-              <input type='text' class="form-control" />
+              <input id = "time" name="time" type='text' class="form-control" />
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
             </div>
@@ -47,7 +48,26 @@
     <div class="control-group">
       <label class="control-label" for="EventDescription">Description</label>
       <div class="controls">
-        <textarea id="EventDescription" name="EventDescription"></textarea>
+
+        <textarea id="EventDescription" name="description" rows="10" cols="50" ></textarea>
+      </div>
+    </div>
+
+
+    <!-- Search input-->
+    <div class="control-group">
+      <label class="control-label" for="EventImageURL">Image URL</label>
+      <div class="controls">
+        <input id="EventImageURL" name="heroImage" type="text" placeholder="" class="input-xlarge search-query">
+        <p class="help-block">Help advertise your event with an image of a flyer!</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="control-group">
+      <label class="control-label" for="eventSubmit"></label>
+      <div class="controls">
+        <button id="eventSubmit" name="eventSubmit" class="btn btn-primary">Submit Event</button>
       </div>
     </div>
 
