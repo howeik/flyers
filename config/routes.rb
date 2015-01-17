@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'login/login'
 
+  get 'events/create_test' => 'events#create_test'
+
   root 'events#index'
+
 
 
   resources :events
