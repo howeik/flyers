@@ -15,13 +15,17 @@ class EventsController < ApplicationController
 
   def create_test
     create
+
+    redirect_to '/'
   end
 
   def create
+    logger.debug(params)
+
     @event={:title=>params[:title], :startDate=>params[:startDate],:endDate=>params[:endDate],
         :description=>params[:description], :images=>params[:images], :organization=>params[:organization],
         :heroImage=>params[:heroImage], :location=>params[:location], :visibility=>params[:visibility],
         :status=>params[:status]}
-    RestClient.post 'http://54.183.116.48/events',@event
+    RestClient.post 'http://54.183.116.48/events', @event
   end
 end
