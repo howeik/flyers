@@ -1,4 +1,6 @@
-<form class="form-horizontal" action="/events/create_test">
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+<form class="form-horizontal">
   <fieldset>
 
     <!-- Form Name -->
@@ -30,7 +32,7 @@
         <div class='col-sm-6'>
           <div class="form-group">
             <div class='input-group date' id='datetimepicker1'>
-              <input id = "time" name="startDate" type='text' class="form-control" />
+              <input id = "time" name="time" type='text' class="form-control" />
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
             </div>
@@ -53,15 +55,6 @@
       </div>
     </div>
 
-    <!-- Text input-->
-    <div class="control-group">
-      <label class="control-label" for="eventContact">Contact for more information</label>
-      <div class="controls">
-        <input id="eventContact" name="contact" type="text" placeholder="" class="input-large">
-
-      </div>
-    </div>
-
 
     <!-- Search input-->
     <div class="control-group">
@@ -80,7 +73,16 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <input id="organization" name="organization" type="text" value="<%= session[:organization] %>">
+=======
+
+
+
+>>>>>>> e39a9e9b4934e697d3e60a2292c9f2fa23953118
 
   </fieldset>
 </form>
+
+
+

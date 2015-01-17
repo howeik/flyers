@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   get 'login/login'
 
   get 'events/create_test' => 'events#create_test'
 
-  root 'events#index'
+  root 'home#index'
 
   resources :sessions
 
