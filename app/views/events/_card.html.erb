@@ -1,20 +1,22 @@
 <div class="col-sm-6 col-lg-6 col-md-6">
-  <a href="<%= event_path(event['_id']) %>">
   <div class="box effect8">
     <div class="container col-md-12" style="padding-top:15px;">
-      <img class="flyer" src="<%= event['heroImage'] %>" alt="" />
+      <img class="flyer" src="http://www.hackcolumb.us/wp-content/uploads/2014/10/1011759_915067298520961_6686583707335269556_n.png" alt="" />
       <div class="overlay">&nbsp
       </div>
       <div class="overlay-text">
-        <%= event['startDate'] %>
-      </div>  
+          <div class="time-container text-center pull-left">
+            <div style="font-size:.8em;">JAN</div>
+            <div style="font-size:1.2em;">16</div>
+          </div>
+        <h1 style="padding-left:11%;">Stupid Hackathon</h1>
+      </div>
     </div>
 
     <div class="container col-md-12">
-      <p class="line1b pull-left"><%= event['location'] %> - <%= event['startDate'] %></p>
+      <p class="line1b pull-left">Location - Time</p>
       <p class="pull-right" style="padding-top:5px;font-size:2.3em;">&#10004</p>
     </div>
 
   </div>
-  </a>
 </div>
