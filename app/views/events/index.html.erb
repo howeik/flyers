@@ -1,9 +1,10 @@
+<div class="clear"></div>
 <div class="row">
-<%= javascript_tag do %>
-  window.events = '<%= raw @events.to_json %>';
-<% end %>
+  <%= javascript_tag do %>
+      window.events = '<%= raw @events.to_json %>';
+  <% end %>
 
   <% @events.each do |event| %>
-    <%= render partial: "card", locals: { event: event } %>
+      <%= render partial: "card", locals: {event: event } %>
   <% end %>
 </div>
