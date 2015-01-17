@@ -1,7 +1,7 @@
-<div class="col-sm-6 col-lg-6 col-md-6">
+<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
   <a href="<%= event_path(event['_id']) %>">
   <div class="box effect8">
-    <div class="container col-md-12" style="padding-top:15px;">
+    <div class="container col-xs-12 col-sm-12 col-md-12" style="padding-top:15px;">
       <img class="flyer" src="<%= event['heroImage']  %>" alt="" />
       <div class="overlay">&nbsp
       </div>
@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="container col-md-12">
+    <div class="container col-xs-12 col-sm-12 col-md-12">
       <p class="line1b pull-left"><% unless event["organization"].nil? %> <%= event["organization"]["name"] %> <% end %></p>
       <p class="pull-right" style="padding-top:5px;font-size:2.3em;">&#10004</p>
     </div>
