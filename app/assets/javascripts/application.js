@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require moment
 //= require bootstrap-datetimepicker
+//= require angular
 //= require_tree .
