@@ -1,4 +1,16 @@
 
+<% if session[:organization].nil? %>
+
+ <div class="jumbotron">
+      <div class="container">
+        <h1>You must log in!</h1>
+        <p>You must log in as an organization to add an event!</p>
+        <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login &raquo;</a></p>
+      </div>
+    </div>
+
+<% else %>
+
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
 <form class="form-horizontal">
   <fieldset>
@@ -79,5 +91,6 @@
   </fieldset>
 </form>
 
+<% end %>
 
 
