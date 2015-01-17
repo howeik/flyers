@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
+
   get 'login/login'
 
   get 'events/create_test' => 'events#create_test'
 
   root 'events#index'
 
-
+  resources :sessions
 
   resources :events
+
+  get 'login' => 'sessions#login'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
