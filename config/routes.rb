@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'home/index'
 
   get 'login/login'
 
   get 'events/create_test' => 'events#create_test'
 
-  root 'home#index'
+  root 'events#index'
 
   resources :sessions
 
